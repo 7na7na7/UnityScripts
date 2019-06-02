@@ -5,17 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class 하이스코어저장: MonoBehaviour
 {
-    public AudioClip sfx;
-    public AudioSource audioSource;
-    //그리고 인스펙터에서 audioSource를 추가하고, 그것을 audioSource에 넣는다.
-    //인스펙터의 audioSource값조정으로도 사운드는 가능하지만, 한번밖에 낼수없다.
-    void Update()
+    void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Space)) //스페이스키를 누르면
-            audioSource.PlayOneShot(sfx, 1.0f);//sfx를 1배의 크기로 소리를 한 번 낸다.
-        this.audioSource.Play(); //audio에 들어 있는 소리 재생
-        this.audioSource.loop = true; //반복재생
-        this.audioSource.Stop(); //재생중지
+        score = 0;
+    }
+    public static int score = 0;
+    public Text scoretext; //여기에 텍스트를 갓다넣는다
+    public Text highScoreText; //여기도
+
+    private string keyString = "highScore"; //하이스트링을 나타내는 문자열 선언
+    private int savedScore = 0;
+
+    void Awake()
+    {
+        savedScore = PlayerPrefs.GetInt(keyString, 0); //저장된 하이스코어 불러오기
+        highScoreText.text = "HIGH SCORE : " + savedScore.ToString("000000");
+    }
+    private void Update()
+    {
+        scoretext.text = "SCORE : " + score.ToString("000000");
+        if (score > savedScore)
+        {
+            PlayerPrefs.SetInt(keyString, score); //하이스코어 저장
+        }
     }
 }
 
