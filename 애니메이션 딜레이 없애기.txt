@@ -1,2 +1,0 @@
-Animation Transition 도중 Has Exit Time과 Fixed Duration에 대한 체크 박스를 해제하고 
-Transition duration과 Transition Offset을 0으로 설정하면 된다.
