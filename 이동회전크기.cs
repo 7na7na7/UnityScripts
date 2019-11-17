@@ -22,13 +22,14 @@ public class 이동회전크기 : MonoBehaviour
 
     
     //회전
-    
+    //절대적인 이동이다. transform.position과 비슷하다.
     transform.rotation = Quaternion.identity;
-    //회전또한 간단하게 회전값을 지정해 줄 수 있다.
+    
     //Quaternion 값으로 지정해야하며
     Quaternion.identity //는 기본값인 (0,0,0)을 나타낸다.
     //Quaternion에 대한 정보는 링크를 참조하자. ( http://docs.unity3d.com/ScriptReference/Quaternion.html )
     
+    //상대적인 이동이다. transform.Translate와 비슷하다.
     transform.Rotate(Vector3.up, speed, Space.World);
     //Rotate를 사용하여 현재 회전값을 기준으로 회전시킬 수 있다.
     //매개변수에는 축, 각도, 기준좌표계가 들어간다.
