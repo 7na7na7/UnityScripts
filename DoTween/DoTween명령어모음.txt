@@ -1,0 +1,125 @@
+홈페이지 : http://dotween.demigiant.com/documentation.php
+
+AudioMixer (Unity 5)
+Expand all
+DOSetFloat(string floatName, float to, float duration)
+AudioSource
+Expand all
+DOFade(float to, float duration)
+DOPitch(float to, float duration)
+Camera
+Expand all
+DOAspect(float to, float duration)
+DOColor(Color to, float duration)
+DOFarClipPlane(float to, float duration)
+DOFieldOfView(float to, float duration)
+DONearClipPlane(float to, float duration)
+DOOrthoSize(float to, float duration)
+DOPixelRect(Rect to, float duration)
+DORect(Rect to, float duration)
+DOShakePosition(float duration, float/Vector3 strength, int vibrato, float randomness, bool fadeOut)
+DOShakeRotation(float duration, float/Vector3 strength, int vibrato, float randomness, bool fadeOut)
+Light
+Expand all
+DOColor(Color to, float duration)
+DOIntensity(float to, float duration)
+DOShadowStrength(float to, float duration)
+Blendable tweens
+DOBlendableColor(Color to, float duration)
+LineRenderer
+Expand all
+DOColor(Color2 startValue, Color2 endValue, float duration)
+Material
+Expand all
+DOColor(Color to, float duration)
+DOColor(Color to, string property, float duration)
+DOColor(Color to, int propertyID, float duration)
+DOFade(float to, float duration)
+DOFade(float to, string property, float duration)
+DOFade(float to, int propertyID, float duration)
+DOFloat(float to, string property, float duration)
+DOFloat(float to, int propertyID, float duration)
+DOGradientColor(Gradient to, float duration)
+DOGradientColor(Gradient to, string property, float duration)
+DOGradientColor(Gradient to, int propertyID, float duration)
+DOOffset(Vector2 to, float duration)
+DOOffset(Vector2 to, string property, float duration)
+DOOffset(Vector2 to, int propertyID, float duration)
+DOTiling(Vector2 to, float duration)
+DOTiling(Vector2 to, string property, float duration)
+DOTiling(Vector2 to, int propertyID, float duration)
+DOVector(Vector4 to, string property, float duration)
+DOVector(Vector4 to, int propertyID, float duration)
+Blendable tweens
+DOBlendableColor(Color to, float duration)
+DOBlendableColor(Color to, string property, float duration)
+DOBlendableColor(Color to, int propertyID, float duration)
+Rigidbody
+These shortcuts use rigidbody's MovePosition/MoveRotation methods in the background, to correctly animate things related to physics objects.
+
+Expand all
+Move
+DOMove(Vector3 to, float duration, bool snapping)
+DOMoveX/DOMoveY/DOMoveZ(float to, float duration, bool snapping)
+DOJump(Vector3 endValue, float jumpPower, int numJumps, float duration, bool snapping)
+Rotate
+DORotate(Vector3 to, float duration, RotateMode mode)
+DOLookAt(Vector3 towards, float duration, AxisConstraint axisConstraint = AxisConstraint.None, Vector3 up = Vector3.up)
+PRO ONLY ➨ Spiral – no FROM
+DOSpiral(float duration, Vector3 axis = null, SpiralMode mode = SpiralMode.Expand, float speed = 1, float frequency = 10, float depth = 0, bool snapping = false)
+Rigidbody2D
+These shortcuts use rigidbody2D's MovePosition/MoveRotation methods in the background, to correctly animate things related to physics objects.
+
+Expand all
+Move
+DOMove(Vector2 to, float duration, bool snapping)
+DOMoveX/DOMoveY(float to, float duration, bool snapping)
+DOJump(Vector2 endValue, float jumpPower, int numJumps, float duration, bool snapping)
+Rotate
+DORotate(float toAngle, float duration)
+SpriteRenderer
+Expand all
+DOColor(Color to, float duration)
+DOFade(float to, float duration)
+DOGradientColor(Gradient to, float duration)
+Blendable tweens
+DOBlendableColor(Color to, float duration)
+TrailRenderer
+Expand all
+DOResize(float toStartWidth, float toEndWidth, float duration)
+DOTime(float to, float duration)
+Transform
+Expand all
+Move
+DOMove(Vector3 to, float duration, bool snapping)
+DOMoveX/DOMoveY/DOMoveZ(float to, float duration, bool snapping)
+DOLocalMove(Vector3 to, float duration, bool snapping)
+DOLocalMoveX/DOLocalMoveY/DOLocalMoveZ(float to, float duration, bool snapping)
+DOJump(Vector3 endValue, float jumpPower, int numJumps, float duration, bool snapping)
+DOLocalJump(Vector3 endValue, float jumpPower, int numJumps, float duration, bool snapping)
+Rotate
+DORotate(Vector3 to, float duration, RotateMode mode)
+DORotateQuaternion(Quaternion to, float duration)
+DOLocalRotate(Vector3 to, float duration, RotateMode mode)
+DOLocalRotateQuaternion(Quaternion to, float duration)
+DOLookAt(Vector3 towards, float duration, AxisConstraint axisConstraint = AxisConstraint.None, Vector3 up = Vector3.up)
+Scale
+DOScale(float/Vector3 to, float duration)
+DOScaleX/DOScaleY/DOScaleZ(float to, float duration)
+Punch – no FROM
+DOPunchPosition(Vector3 punch, float duration, int vibrato, float elasticity, bool snapping)
+DOPunchRotation(Vector3 punch, float duration, int vibrato, float elasticity)
+DOPunchScale(Vector3 punch, float duration, int vibrato, float elasticity)
+Shake – no FROM
+DOShakePosition(float duration, float/Vector3 strength, int vibrato, float randomness, bool snapping, bool fadeOut)
+DOShakeRotation(float duration, float/Vector3 strength, int vibrato, float randomness, bool fadeOut)
+DOShakeScale(float duration, float/Vector3 strength, int vibrato, float randomness, bool fadeOut)
+Path – no FROM
+DOPath(Vector3[] waypoints, float duration, PathType pathType = Linear, PathMode pathMode = Full3D, int resolution = 10, Color gizmoColor = null)
+DOLocalPath(Vector3[] waypoints, float duration, PathType pathType = Linear, PathMode pathMode = Full3D, int resolution = 10, Color gizmoColor = null)
+Blendable tweens
+DOBlendableMoveBy(Vector3 by, float duration, bool snapping)
+DOBlendableLocalMoveBy(Vector3 by, float duration, bool snapping)
+DOBlendableRotateBy(Vector3 by, float duration, RotateMode mode)
+DOBlendableLocalRotateBy(Vector3 by, float duration, RotateMode mode)
+DOBlendableScaleBy(Vector3 by, float duration)
