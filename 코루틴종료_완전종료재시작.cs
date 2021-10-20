@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+https://forum.unity.com/threads/how-to-cancel-and-restart-a-coroutine.435493/
+
 public class 코루틴종료_완전종료재시작 : MonoBehaviour
 {
     private Coroutine coroutine;
