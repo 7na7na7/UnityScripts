@@ -1,0 +1,7 @@
+https://shlifedev.gitbook.io/unitygooglesheet/getting-start/apps-script
+이거 보고 하면 된다.
+1. 패키지 추가하기 (json파일)
+2. https://script.google.com/d/1Hn0u-_Wg9mEADDcmFpvMfMn-wLyOqlx_3b5wHBbJpBkyEH89hI32shfr/edit?usp=drive_web 
+여기서 사본만들고 비번설정하고 웹으로 게시로 URL얻어오기
+3. 드라이브폴더만들고 폴더링크(URL뒷부분숫자) 얻어오기
+4. 시트 URL, 시트비번, 드라이브 URL로 세팅하기
