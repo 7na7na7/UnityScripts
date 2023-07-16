@@ -14,7 +14,8 @@ public class TexturePostProcessor : AssetPostprocessor
 
 		TextureImporter importer = assetImporter as TextureImporter;
 
-		importer.textureType = TextureImporterType.Default;   // 기본 타입을 Advanced로..
+		importer.textureType = TextureImporterType.Sprite;
+		importer.spritePixelsPerUnit=24;
 
 		importer.anisoLevel = 1;
 
